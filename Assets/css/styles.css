@@ -1,0 +1,494 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Base styles for headings and paragraphs */
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+    margin-bottom: 0.5em;
+
+}
+h7 {
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    align-items: center;
+}
+nav a {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: x-large;
+    color: #fff;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .logo {
+    height: 5vh;
+    padding: 10px;
+    width: auto;
+    margin-right: 1em; /* Space between logo and links */
+}
+
+/* Navigation hover effect */
+.navHover:hover {
+    background-color: #007acc;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #222;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+header nav a {
+    color: #fff;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    margin-top: auto;
+}
+/* Hero Section */
+.hero {
+    background: url('../images/hero-bg1.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 4em 2em;
+    text-align: center;
+}
+/* Hero Text Background Box */
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    padding: 30px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 100%; /* Keeps box size manageable */
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Adjust hero text */
+.hero h1, .hero p {
+    color: #333; /* Darker color for readability on white background */
+    margin: 1px;
+    padding: 15px;
+
+}
+
+/* Add hover effect to link */
+.hero-text a:hover {
+    color: 00aaff;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Main Content */
+.main-content {
+    padding: 3em;
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+/* Add hover effect to link */
+.main-content a:hover {
+    color: 00aaff;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.testimonials h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+.programs .program {
+    position: relative;
+    padding: 2em;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+}
+
+/* Apply specific images to each program */
+.programs .program:nth-child(1) {
+    background-image: url('../images/K12-image.jpg'); /* K-12 image */
+}
+
+.programs .program:nth-child(2) {
+    background-image: url('../images/higher-education-image.jpg'); /* Higher Education image */
+}
+
+.programs .program:nth-child(3) {
+    background-image: url('../images/business-training-image.jpg'); /* Business Training image */
+}
+
+/* Black overlay to make image opaque */
+.program::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the color and opacity as needed */
+    z-index:0 ;
+}
+/* Enhance text visibility */
+.program h3, .program p, .program a {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Added stronger text shadow */
+    margin-bottom: 1em;
+}
+
+/* Ensure content is above overlay */
+.program h3 {
+    font-size: 1.8em; /* Made heading larger */
+    font-weight: 700; /* Made font weight bolder */
+    margin-bottom: 0.5em;
+}
+
+.program p {
+    font-size: 1.1em; /* Slightly larger paragraph text */
+    line-height: 1.6; /* Better line spacing */
+}
+
+.program a {
+    color: #00aaff; /* Bright blue for links */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.program a:hover {
+    color: #66ccff; /* Lighter blue on hover */
+    text-decoration: underline;
+}
+
+
+.testimonials {
+    padding: 4em;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.testimonials p {
+    margin: 0.5em 0;
+    line-height: 1.5;
+}
+
+.section {
+    margin-bottom: 2em;
+}
+.cta-section {
+    padding: 2em;
+    text-align: center;
+    margin: 2em 0;
+
+}
+.cta-section .cta-button {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background-color: #007acc; /* Button color */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.cta-section .cta-button:hover {
+    background-color: #00295e; /* Darker shade on hover */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
+/* About Page Content */
+.about-content {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.about-content h2 {
+    font-size: 1.8em;
+    color: #222;
+    margin-bottom: 0.5em;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-content ul li {
+    margin: 0.5em 0;
+}
+
+/* Basic styling for form container */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light background */
+}
+
+/* Styling for form */
+.contact-form {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #333;
+}
+
+.contact-form label {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007acc;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 150px; /* Adjust the height of the message box */
+}
+
+.contact-form button {
+    padding: 0.75em 1.5em;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Center button */
+}
+
+.contact-form button:hover {
+    background-color: #005f99;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1.5em;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.75em;
+    }
+
+    .contact-form button {
+        width: 100%; /* Full-width button on mobile */
+    }
+}
+
+/* General styling for the pricing section */
+.pricing-content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pricing-heading {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.pricing-description {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Container for the pricing cards */
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Pricing Card */
+.pricing-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px); /* Lift the card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+.pricing-card .plan-title {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.pricing-card .plan-price {
+    font-size: 2.5em;
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+.pricing-card .plan-features {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.pricing-card .plan-features li {
+    margin-bottom: 10px;
+}
+
+.pricing-card .plan-button {
+    background-color: #007acc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-card .plan-button:hover {
+    background-color: #005f99;
+}
+
+/* Style for the enterprise plan card */
+.pricing-card.enterprise {
+    border: 2px solid #007acc;
+    background-color: #f1f8ff;
+}
+
+.pricing-card.enterprise .plan-title {
+    color: #007acc;
+}
+
+.pricing-card.enterprise .plan-button {
+    background-color: #005f99;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pricing-card {
+        width: 90%;
+        max-width: 100%;
+    }
+}

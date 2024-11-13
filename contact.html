@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Digital Shield Academy</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="homepage.html">
+                <img src="Assets/images/logo.png" class="logo">
+            </a>
+            <a href="homepage.html" class="navHover">Home</a>
+            <a href="about.html" class="navHover">About</a>
+            <a href="services.html" class="navHover">Services</a>
+            <a href="pricing.html" class="navHover">Pricing</a>
+            <a href="contact.html"class="navHover">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Contact Us</h1>
+                <p>Have questions? We're here to help. Get in touch with Digital Shield Academy today!</p>
+            </div>
+        </section>
+
+        <section class="contact-content main-content">
+            <h2>Get in Touch</h2>
+            <p>Please fill out the form below, and a representative will get back to you shortly.</p>
+
+            <form action="submit_form.php" method="POST" class="contact-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <br /> <label for="message">Message:</label>
+               <br /> <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digital Shield Academy</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
