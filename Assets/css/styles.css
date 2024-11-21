@@ -54,7 +54,7 @@ nav a {
 }
 
 header .logo {
-    height: 7vh;
+    height: 6vh;
     padding: 5px;
     width: auto;
     margin-right: 1em; /* Space between logo and links */
@@ -103,6 +103,7 @@ footer {
     max-width: 100%; /* Keeps box size manageable */
     margin: 0 auto;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    font-size: 18px;
 }
 
 /* Adjust hero text */
@@ -113,6 +114,7 @@ footer {
 
 }
 
+/* Link text */
 .hero-text a{
     display: inline-block;
     padding: 0.8em 1.5em;
@@ -144,7 +146,16 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 0;
+    font-size: 18px;
+
 }
+
+/* Main Content About 
+.main-content.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+    */
 /* Add hover effect to link */
 .main-content a:hover {
     color: 00aaff;
@@ -297,6 +308,63 @@ footer {
 
 .about-content ul li {
     margin: 0.5em 0;
+}
+
+.services-content {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 2em;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.services-header{
+    text-align:center;
+    margin-bottom: 3em;
+    padding: 0 1em;
+}
+.services-header h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.services-header p {
+    color: #666;
+    font-size: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 2em;
+    padding: 1em;
+}
+.service-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.service-card h2 {
+    color: #0066cc;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+}
+
+.service-card p {
+    color:#6b6b6b;
+    margin-bottom: 1em;
+    font-size: 20px;
 }
 
 /* Basic styling for form container */
@@ -477,6 +545,9 @@ footer {
 .pricing-card.enterprise {
     border: 2px solid #007acc;
     background-color: #f1f8ff;
+}
+.pricing-card.enterprise .plan-price {
+    font-size: 36px;
 }
 
 .pricing-card.enterprise .plan-title {
