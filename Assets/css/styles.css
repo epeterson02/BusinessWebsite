@@ -1,4 +1,4 @@
-/* Reset default browser styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -100,9 +100,9 @@ footer {
     padding: 30px 20px;
     border-radius: 8px;
     display: inline-block;
-    max-width: 100%; /* Keeps box size manageable */
+    max-width: 100%; /*  */
     margin: 0 auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* shadow for depth */
     font-size: 18px;
 }
 
@@ -150,12 +150,7 @@ footer {
 
 }
 
-/* Main Content About 
-.main-content.about p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-    */
+
 /* Add hover effect to link */
 .main-content a:hover {
     color: 00aaff;
@@ -180,7 +175,7 @@ footer {
     overflow: hidden;
 }
 
-/* Apply specific images to each program */
+/* Apply  images to each program */
 .programs .program:nth-child(1) {
     background-image: url('../images/K12-image.jpg'); /* K-12 image */
 }
@@ -201,7 +196,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the color and opacity as needed */
+    background-color: rgba(0, 0, 0, 0.6); 
     z-index:0 ;
 }
 /* Enhance text visibility */
@@ -209,7 +204,7 @@ footer {
     position: relative;
     z-index: 1;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Added stronger text shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* stronger text shadow */
     margin-bottom: 1em;
 }
 
@@ -221,8 +216,8 @@ footer {
 }
 
 .program p {
-    font-size: 1.1em; /* Slightly larger paragraph text */
-    line-height: 1.6; /* Better line spacing */
+    font-size: 1.1em; /* larger paragraph text */
+    line-height: 1.6; /*  line spacing */
 }
 
 .program a {
@@ -381,7 +376,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    min-height: 50vh; /* Adjust height for centering */
+    min-height: 50vh; 
     box-sizing: border-box;
 }
 
@@ -464,7 +459,7 @@ footer {
     }
 
     .contact-form button {
-        width: 100%; /* Full-width button on mobile */
+        width: 100%; /* Full-width button for mobile */
     }
 }
 
@@ -507,7 +502,7 @@ footer {
 
 .pricing-card:hover {
     transform: translateY(-10px); /* Lift the card */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* shadow */
 }
 
 .pricing-card .plan-title {
@@ -550,7 +545,7 @@ footer {
     background-color: #005f99;
 }
 
-/* Style for the enterprise plan card */
+/* cool design trick */
 .pricing-card.enterprise {
     border: 2px solid #007acc;
     background-color: #f1f8ff;
